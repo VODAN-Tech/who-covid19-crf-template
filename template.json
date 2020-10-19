@@ -1,0 +1,39 @@
+{
+  "name": "WHO COVID CRF (RDF)",
+  "description": "WHO COVID-19 CRF export RDF template",
+  "id": "vodan:who-covid19-crf:1.0.0",
+  "templateId": "who-covid19-crf",
+  "organizationId": "vodan",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "metamodelVersion": 1,
+  "recommendedPackageId": "vodan:who-covid19-crf:0.1.3",
+  "readme": "# who-covid19-crf RDF Template\n\nWHO COVID-19 CRF export RDF template based on the Semantic Model: https://github.com/FAIRDataTeam/WHO-COVID-CRF\n",
+  "allowedPackages": [
+    {
+      "orgId": "vodan",
+      "kmId": "who-covid19-crf",
+      "minVersion": "0.1.0",
+      "maxVersion": null
+    }
+  ],
+  "formats": [
+    {
+      "uuid": "9c7d572e-c273-4323-97a4-ab38f943c33a",
+      "name": "Turtle (TTL)",
+      "shortName": "ttl",
+      "icon": "fas fa-file-code",
+      "color": "#f15a24",
+      "steps": [
+        {
+          "name": "jinja",
+          "options": {
+            "template": "main.ttl.j2",
+            "content-type": "text/ttl",
+            "extension": "ttl"
+          }
+        }
+      ]
+    }
+  ]
+}
